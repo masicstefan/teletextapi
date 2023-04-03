@@ -20,14 +20,10 @@ Aplikacijo zaženemo z ukazom `node index.js` ali ukazom `nodemon index.js`
 ## Podatkovna baza
 Za potrebe podatkovne baze bo uporabljen relacijski model ali model ključ-vrednost.
 
+![ER diagram](https://user-images.githubusercontent.com/101993285/229517590-6c8db453-a990-45d7-bee3-abcb6e058eea.png)
 ER diagram
 <p align="left"> ER diagram</p>
 
-<p align="center">
-  <img width="460" height="300" src="[http://www.fillmurray.com/460/300](https://user-images.githubusercontent.com/101993285/229517590-6c8db453-a990-45d7-bee3-abcb6e058eea.png)">
-</p>
-
-![ER diagram](https://user-images.githubusercontent.com/101993285/229517590-6c8db453-a990-45d7-bee3-abcb6e058eea.png)
 
 
 >**MATCO logotip** predpona je dodano kot posvetilo priznanemu slovenskemu nožarju Mateju, umetniku med obrtniki njegovega stanu ter dolgoletnemu sponzorju avtorja.
