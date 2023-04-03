@@ -20,15 +20,13 @@ Aplikacijo zaženemo z ukazom `node index.js` ali ukazom `nodemon index.js`
 ## Podatkovna baza
 Za potrebe podatkovne baze bo uporabljen relacijski model ali model ključ-vrednost.
 
-<img align="center" width="400" height="400" src="https://user-images.githubusercontent.com/101993285/229517590-6c8db453-a990-45d7-bee3-abcb6e058eea.png">
 ER diagram
+<p align="left"> ER diagram</p>
 
 <p align="center">
   <img width="460" height="300" src="[http://www.fillmurray.com/460/300](https://user-images.githubusercontent.com/101993285/229517590-6c8db453-a990-45d7-bee3-abcb6e058eea.png)">
 </p>
 
-https://user-images.githubusercontent.com/101993285/229517590-6c8db453-a990-45d7-bee3-abcb6e058eea.png
-<p align="left"> ER diagram</p>
 ![ER diagram](https://user-images.githubusercontent.com/101993285/229517590-6c8db453-a990-45d7-bee3-abcb6e058eea.png)
 
 
