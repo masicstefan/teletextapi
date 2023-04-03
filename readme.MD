@@ -14,4 +14,10 @@ Podrejeno se funkcionalnost razširi z dodajanjem možnosti nastavitve delovnega
 
 **Oblikovni** princip sicer ni ključnega značaja za aplikacijo. Ne glede na to se bo aplikacija ukvarjala tudi z "retro" konceptom predstavitve (izbira primerne teletext pisave, uporaba zgolj majhne množice barv).
 
+<hr>
+
 >**MATCO logotip** predpona je dodano kot posvetilo priznanemu slovenskemu nožarju Mateju, umetniku med obrtniki njegovega stanu ter dolgoletnemu sponzorju avtorja.
+
+<hr>
+##Razvojno okolje"
+Aplikacijo zaženemo z ukazom `node index.js` ali ukazom `nodemon index.js`
