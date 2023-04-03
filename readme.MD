@@ -24,6 +24,9 @@ Za potrebe podatkovne baze bo uporabljen relacijski model ali model ključ-vredn
 ER diagram
 <p align="left"> ER diagram</p>
 
+<p align="center">
+// Your content
+</p>
 
 
 >**MATCO logotip** predpona je dodano kot posvetilo priznanemu slovenskemu nožarju Mateju, umetniku med obrtniki njegovega stanu ter dolgoletnemu sponzorju avtorja.
