@@ -20,7 +20,7 @@ Podrejeno se funkcionalnost razširi z dodajanjem možnosti nastavitve delovnega
 
 <hr>
 ##Razvojno okolje"
-Aplikacijo zaženemo z ukazom `node index.js` ali ukazom `nodemon index.js`
+Aplikacijo zaženemo z ukazom ``node index.js`` ali ukazom ``nodemon index.js``
 
 ```bash
 xxxx
