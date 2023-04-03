@@ -19,10 +19,7 @@ Podrejeno se funkcionalnost razširi z dodajanjem možnosti nastavitve delovnega
 >**MATCO logotip** predpona je dodano kot posvetilo priznanemu slovenskemu nožarju Mateju, umetniku med obrtniki njegovega stanu ter dolgoletnemu sponzorju avtorja.
 
 <hr>
-##Razvojno okolje"
-Aplikacijo zaženemo z ukazom ``node index.js`` ali ukazom ``nodemon index.js``
+##Razvojno okolje##
+Aplikacijo zaženemo z ukazom `node index.js` ali ukazom ``nodemon index.js``
 
-```bash
-xxxx
-dddd
-```
+KD
