@@ -20,7 +20,7 @@ Aplikacijo zaženemo z ukazom `node index.js` ali ukazom `nodemon index.js`
 ## Podatkovna baza
 Za potrebe podatkovne baze bo uporabljen relacijski model ali model ključ-vrednost.
 
-![ER diagram](public/TeletextERD_SM.jpg)
+![ER diagram](/public/TeletextERD_SM.jpg)
 
 
 >**MATCO logotip** predpona je dodano kot posvetilo priznanemu slovenskemu nožarju Mateju, umetniku med obrtniki njegovega stanu ter dolgoletnemu sponzorju avtorja.
