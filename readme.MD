@@ -13,6 +13,8 @@ Podrejeno se funkcionalnost razširi z dodajanjem možnosti nastavitve delovnega
 **Oblikovni** princip sicer ni ključnega značaja za aplikacijo. Ne glede na to se bo aplikacija ukvarjala tudi z "retro" konceptom predstavitve (izbira primerne teletext pisave, uporaba zgolj majhne množice barv).
 
 ## Razvojno okolje
+Uporabljene so naslednje tehnologije: node.js, express, joi.
+
 Aplikacijo zaženemo z ukazom `node index.js` ali ukazom ``nodemon index.js``
 
 
