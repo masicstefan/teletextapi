@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Podatkovni model</title>
+    </head>
+ 
+    <body>
+        <script>
+            // Footer.
+            fetch("/footer")
+                .then(response => {
+                    return response.text()
+                })
+                .then(data => {
+                    document.querySelector("footer").innerHTML = data;
+                });
+          </script>
+
+        <h2>Podatkovni model (koncept)</h2>
+        <p>Za potrebe podatkovne baze bo uporabljen ali mySQL ali MongoDb.
+            Potrebni so naslednji podatki: strani, podstrani, skupine, kazala, skrbnik.
+            Preglednica v nadaljevanju podaja osnutek "entitet" in njihovo podatkovno shemo.
+        </p>
+
+        <table style="width:60%">
+            <caption>Koncept podatkovnega modela</caption>
+            <tr>
+              <th style="width:15%" >Entiteta</th>
+              <th style="width:30%">Predvidena polja</th>
+              <th style="width:55%">Primer</th>
+            </tr>
+            <tr>
+              <td>Stran</td>
+              <td>UUID strani, Stevilka strani, Naslov, Vsebina</td>
+              <td>(1234-5678-9012-3456, 144, Plače učiteljev padajo, Učitelji ...)</td>
+            </tr>
+            <tr>
+                <td>Podstran</td>
+                <td>UUID strani, Stevilka strani, Številka podstrani, Naslov, Vsebina</td>
+                <td>(1234-5678-9012-3456, 144, Učitelji besni, Stavka se ...)</td>
+            </tr>
+          <tr>
+              <td>Skupina</td>
+              <td>Stevilka skupine, naziv skupine</td>
+              <td>(400, Šport) </td>
+            </tr>
+            <tr>
+                <td>Kazalo</td>
+                <td>Številka kazala, Naslov</td>
+                <td>(400, Vreme)</td>
+            </tr>
+        </table>
+        
+        <footer></footer>
+   </body>
+</html>

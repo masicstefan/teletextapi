@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+    title novica 
+    link(rel='stylesheet', href='')
+    body 
+        #container 
+            form(action='/novica' method='POST')
+            h3 Nova novica 
+            label Stevilka: 
+            input(type='text', name='novica')
+            label Naziv: 
+            input(type='text', name='naziv')
+            label Opis: 
+            input(type='text', name='opis')
+            input(type='submit', value='Poslji')

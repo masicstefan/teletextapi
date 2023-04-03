@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Admin</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <script>
+            const listElement = document.querySelector('ul');
+            
+            // Footer.
+            fetch("/footer")
+                .then(response => {
+                    return response.text()
+                })
+                .then(data => {
+                    document.querySelector("footer").innerHTML = data;
+                });
+
+            function showList(){
+                const listEl = document.querySelector('ul');
+                fetch("/api/strani")   
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data);
+                        console.log(data.length);
+                        data.forEach(element => {
+                            const novica = `<li>${element.naslov} ${element.idstrani}</li>`
+                            listEl.insertAdjacentHTML('beforeend', novica);
+                        });
+                    });
+            }
+
+            function createList(data) {
+                const mainUL = document.createElement('ol');
+
+                for (let i = 0; i < data.result.length-1; i++) {
+                    const naslovLI = document.createElement('li');
+                    naslovLI.innerHTML = data.result[i].naslov;
+
+                    // append student list to mainUL
+                    mainUL.appendChild(naslovLI);
+                }
+                // append mainUL to body
+                document.body.appendChild(mainUL);
+            }
+
+            function formNovaNovica() {
+                const formNovica = document.createElement('form');
+                formNovica.innerHTML = `<label>Številka novice: <input type="text" /> </label>`;
+
+                // return (
+                //     <form>
+                //         <label>Številka novice: <input type="text" /> </label>
+                //         <label>Naziv novice: <input type="text" /> </label>
+                //         <label>Vsebina novice: <input type="text" /> </label>
+                //     </form>
+                // )
+            }
+        </script>
+
+        <h2>Administracija Teletekst vsebin</h2>
+        <button onclick="showList()">Prikaži vse novice - strani</button>
+        <p><a href="/novanovica">Vnesi novo novico</a></p>
+
+        <ul> </ul>
+        <footer></footer>
+   </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Posebnosti</title>
+    </head>
+
+    <body>
+        <script>
+            // Footer.
+            fetch("/footer")
+                .then(response => {
+                    return response.text()
+                })
+                .then(data => {
+                    document.querySelector("footer").innerHTML = data;
+                });
+        </script>
+    
+        <h2>Tehnične podrobnosti</h2>
+        <p>V preglednici so predstavljene tehnične podrobnosti izvedbe uporabniškega in strežniškega dela.</p>
+
+        <table style="width:40%">
+            <tr>
+              <td style="width:30%">Frontend</td>
+              <td>Node.js (https, fs, url)</td>
+            </tr>
+            <tr>
+              <td>Backend</td>
+              <td>Node.js (http)</td>
+            </tr>
+            <tr>
+                <td>Dokumentacija</td>
+                <td>ST_V.docx</td>
+            </tr>
+        </table>
+        
+        <footer></footer>
+   </body>
+</html>

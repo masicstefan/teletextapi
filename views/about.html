@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title> About </title>
+    </head>
+
+ 
+    <body>
+        <script>
+            // Footer, header.
+            fetch("/footer")
+                .then(response => {
+                    return response.text()
+                })
+                .then(data => {
+                    document.querySelector("footer").innerHTML = data;
+                });
+            
+            fetch("/header")
+                .then(response => {
+                    return response.text()
+                })
+                .then(data => {
+                    document.querySelector("header").innerHTML = data;
+                });
+        </script>
+
+        <header></header>
+        <h2>O programu</h2>
+        <p>Program je nastal kot projektna naloga pri predmetu Spletne tehnologije.
+           Program je simulacija znane platforme <b>TELETEXT</b>, nastale v času analognih televizorjev.
+           Ideja programa je zgolj študijskega značaja, podrejeno pa se bo uporabila v okviru organizacije kot kanal sporočanja.
+        </p>
+        <div>
+            <p>Avtor: Stefan Masic; Asistent: Patrik Rek; Sponzor: MATCO; Leto rojstva: 2023</p>
+        </div>
+
+        <!-- <div class="teletext">                   
+            <span class="redbg">                   </span>
+            <span class="redbg"></span> <span class="yellow">&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;&#xe210;</span>
+            <span class="yellow">                   </span>
+            <span class="yellow"></span><span class="yellow redbg"> &#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;</span>
+            <span class="yellow redbg"></span><span class="yellow bluebg">                   </span>
+            <span class="yellow bluebg"> </span><span class="magenta bluebg">&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;</span>
+            <span class="magenta bluebg">                   </span>
+            <span class="magenta bluebg"></span><span class="magenta">                   </span>
+            <span class="magenta"></span><span class="magenta bluebg"> &#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;&#xe204;</span>
+        </div> -->
+        <footer></footer>
+   </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title> Nova novica </title>
+    </head>
+
+    <body>
+        <h2>Nova novica</h2>
+
+        <form id='form' method="POST" action="/api/strani">
+            <div class='dob'>
+                <label for="stevilkastrani">Stevilka strani</label>
+                <input id='stevilkastrani' type='number' name='date' placeholder='Stevilka strani' value="100">
+                <br><br>
+                <label for="naslov">Naslov novice (20 znakov)</label>
+                <input id='naslov' type='text' name='naslov' placeholder='Naslov novice'>
+                <br><br>
+                <label for="opis">Opis novice (80 znakov)</label>
+                <input id='opis' type='text' name='opis' placeholder='Opis novice'>
+            </div>
+            <input id='poslji' type='submit' name='poslji' value="Poslji">
+         </form>
+    </body>
+</html>
