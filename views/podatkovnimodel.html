@@ -10,7 +10,15 @@
  
     <body>
         <script>
-            // Footer.
+            // Header, Footer.
+            fetch("/header")
+                .then(response => {
+                    return response.text()
+                })
+                .then(data => {
+                    document.querySelector("header").innerHTML = data;
+                });
+
             fetch("/footer")
                 .then(response => {
                     return response.text()
@@ -18,8 +26,9 @@
                 .then(data => {
                     document.querySelector("footer").innerHTML = data;
                 });
-          </script>
+        </script>
 
+        <header></header>
         <h2>Podatkovni model (koncept)</h2>
         <p>Za potrebe podatkovne baze bo uporabljen ali mySQL ali MongoDb.
             Potrebni so naslednji podatki: strani, podstrani, skupine, kazala, skrbnik.

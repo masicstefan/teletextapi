@@ -10,16 +10,25 @@
  
     <body>
       <script>
-        // Footer.
-        fetch("/footer")
+        // Header, Footer.
+        fetch("/header")
+          .then(response => {
+            return response.text()
+          })
+          .then(data => {
+            document.querySelector("header").innerHTML = data;
+          });
+
+          fetch("/footer")
             .then(response => {
-                return response.text()
+              return response.text()
             })
             .then(data => {
-                document.querySelector("footer").innerHTML = data;
-            });
+              document.querySelector("footer").innerHTML = data;
+          });
       </script>
 
+      <header></header>
       <h2>Funkcionalnosti spletne strani MATCO Teletext</h2>
         
       <p>Preglednica podaja osnovne funkcionalnosti spletne strani kot jih vidi odjemalec.

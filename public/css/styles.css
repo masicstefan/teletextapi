@@ -88,14 +88,16 @@ label {
 	background-color: black;
 	color: red;
 	padding: 10px;
+	display: block;
 }
 
 input {
-	font-family: 'Arail';
+	font-family: 'Roboto';
 	font-size: 20px;
-	background-color: black;
+	background-color: whitesmoke;
 	color: red;
 	padding: 10px;
+	display: block;
 }
 
 div {
