@@ -1,17 +1,28 @@
-name: MATCO Teletext
-
+name: Electron Matco Teletext
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ $default-branch ]
-
+    branches: [ main, master ]
 jobs:
-  build:
+  test:
+    timeout-minutes: 60
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Run a one-line script
-        run: echo Hello from Octo Organization
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - uses: samuelmeuli/action-electron-builder@v1
+    - name: Install dependencies
+      run: npm ci
+    - name: Install Playwright Browsers
+      run: npx playwright install --with-deps
+    - name: Run Playwright tests
+      run: npx playwright test
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30
