@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title> Gumbi </title>
+    </head>
+
+ 
+    <body>
+        <script>
+            // Header, Footer.
+            fetch("/header")
+                .then(response => {
+                    return response.text()
+                })
+                .then(data => {
+                    document.querySelector("header").innerHTML = data;
+                });
+
+            fetch("/footer")
+                .then(response => {
+                    return response.text()
+                })
+                .then(data => {
+                    document.querySelector("footer").innerHTML = data;
+                });
+        </script>
+
+        <header></header>
+        <h2>Gumbi</h2>
+        <p>Pritisni tipko &nbsp; <b>R</b> &nbsp; za prikaz strani &nbsp; <b>RTV SLO Teletext</b></p>
+        <p>Pritisni tipko &nbsp; <b>O</b> &nbsp; za prikaz strani &nbsp; <b>ORF Teletext</b></p>
+        <p>Raje ne pritisni tipke &nbsp; <b>P</b>!</p>
+        <footer></footer>
+   </body>
+</html>

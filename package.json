@@ -4,18 +4,23 @@
   "description": "Teletext MATCO",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm index.js"
   },
   "keywords": [],
   "author": "Štefan Masič",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-validator": "^6.15.0",
     "git": "^0.1.5",
     "joi": "^13.1.0",
-    "pug": "^3.0.2"
+    "mysql2": "^3.2.0",
+    "pug": "^3.0.2",
+    "react": "^18.2.0",
+    "sqlite3": "^5.1.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@playwright/test": "^1.32.3"
+  }
 }

@@ -62,6 +62,7 @@ li {
 	border-radius: 0	rem;
 	background: cyan;
 	color: black;
+	list-style-type: none;
 }
 
 li + li {
