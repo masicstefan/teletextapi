@@ -13,7 +13,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
-    - uses: samuelmeuli/action-electron-builder@v1
+    - uses: teletextapi/action-electron-builder@v1
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
